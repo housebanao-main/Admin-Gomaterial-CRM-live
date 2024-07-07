@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ad396a71.css",
+    "main.js": "/static/js/main.d407e18a.js",
+    "static/js/213.00d5e61b.chunk.js": "/static/js/213.00d5e61b.chunk.js",
+    "static/js/732.64e60590.chunk.js": "/static/js/732.64e60590.chunk.js",
+    "static/media/housebanao.svg": "/static/media/housebanao.3f49e262ada9a6a93f7277a3056ac120.svg",
+    "static/media/poster.jpeg": "/static/media/poster.69faa022fc6e868f7ecc.jpeg",
+    "static/media/Logo.png": "/static/media/Logo.3ba864cd2522d446d0e0.png",
+    "index.html": "/index.html",
+    "main.ad396a71.css.map": "/static/css/main.ad396a71.css.map",
+    "main.d407e18a.js.map": "/static/js/main.d407e18a.js.map",
+    "213.00d5e61b.chunk.js.map": "/static/js/213.00d5e61b.chunk.js.map",
+    "732.64e60590.chunk.js.map": "/static/js/732.64e60590.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad396a71.css",
+    "static/js/main.d407e18a.js"
+  ]
+}
