@@ -14,6 +14,12 @@ connectDB();
 // Middleware
 app.use(express.json());
 app.use(cors());
+// Enable CORS globally for all routes
+app.use(cors({
+    origin: 'http://ec2-16-171-197-219.eu-north-1.compute.amazonaws.com:3001',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow all HTTP methods
+    allowedHeaders: ['Content-Type', 'Authorization'], // Allow specific headers
+  }));
 
 // Routes
 app.use('/api/boq', require('./routes/boqRoutes')); // Ensure this route is correct
