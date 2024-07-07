@@ -18,20 +18,21 @@ function Login() {
         },
         body: JSON.stringify({ email, password }),
       });
-
-      const data = await response.json();
-      if (response.ok) {
-        localStorage.setItem('token', data.token);
-        console.log('Login successful');
-        navigate('/'); // Redirect to dashboard
-      } else {
-        setError(data.message);
+  
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
       }
+  
+      const data = await response.json();
+      localStorage.setItem('token', data.token);
+      console.log('Login successful');
+      navigate('/');
     } catch (error) {
-      console.error('Login failed:', error);
+      console.error('Login failed:', error.message);
       setError('Login failed. Please try again.');
     }
   };
+  
 
   return (
     <div className={styles.mainContainer}>

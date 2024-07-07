@@ -7,6 +7,7 @@ const connectDB = require('./config/db');
 const app = express();
 const PORT = process.env.PORT || 5000; // Use 5000 as a fallback if PORT is not set
 
+console.log(PORT);
 // Connect to MongoDB
 connectDB();
 
